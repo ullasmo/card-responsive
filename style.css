@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+}
+body {
+  background-color: rgb(2, 6, 62);
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+}
+.container {
+  width: 80%;
+  height: 80%;
+  background-image: linear-gradient(to right, rgb(250, 98, 123), blue);
+  border-radius: 10px;
+  margin: 0 auto;
+  line-height: 1.5;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.container-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+  width: 90%;
+  height: 95%;
+}
+.left,
+.right {
+  padding: 3em 0;
+}
+.container .container-inner .left {
+  text-align: center;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(67, 67, 67));
+  color: white;
+  border-radius: 10px;
+  margin: 0 auto;
+  flex-grow: 1;
+  height: 100%;
+}
+.container .left img {
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
+}
+.container .container-inner .right {
+  text-align: center;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(67, 67, 67));
+  color: white;
+  /* width: 60%; */
+  height: 100%;
+  border-radius: 10px;
+  margin: 2em auto;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+}
+.right table {
+  width: 90%;
+  /* border: 3px solid green; */
+  margin: 2em auto;
+}
+table {
+  text-align: start;
+}
+table tr td:nth-child(1) {
+  text-align: srart;
+  font-weight: 600;
+}
+table tr td:nth-child(2) {
+  text-align: end;
+}
+h1 {
+  font-size: 1.8rem;
+  background: linear-gradient(rgb(229, 255, 0), rgb(255, 2, 175));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+h2 {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 810px) {
+  html {
+    font-size: 12px;
+  }
+  .container-inner {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .container .container-inner .right {
+    width: 99%;
+    margin: 0.3em auto;
+  }
+  .container .container-inner .left {
+    width: 99%;
+    margin: 0.3em auto;
+  }
+  .container {
+    width: 94%;
+    height: 98%;
+  }
+  .container-inner {
+    width: 90%;
+
+    padding: 0.3em;
+  }
+  .left,
+  .right {
+    padding: 1em 0;
+  }
+}
